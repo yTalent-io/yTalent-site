@@ -88,6 +88,88 @@
 
 /* SECTIONS */
 
+/* FOOTER */
+.footer-wrapper {
+  height: 500px;
+  background-color: #fbfbfd;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 70px 0;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+.logo p {
+  max-width: 200px;;
+}
+
+.yTalent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.yTalent p {
+  color: #233771;
+  font-size: 18px;
+  margin-left: -50px;
+}
+
+.yTalent ul {
+  list-style: none;
+}
+
+.yTalent ul a {
+  text-decoration: none;
+}
+
+.legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.legal p {
+  color: #233771;
+  font-size: 18px;
+  margin-left: -110px;
+}
+
+.legal ul {
+  list-style: none;
+}
+
+.legal ul a {
+  text-decoration: none;
+}
+
+.follow-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.follow {
+  margin-left: -90px;
+}
+.follow p {
+  color: #233771;
+  font-size: 18px;
+}
+
+.info p {
+  margin-left: -65px;
+}
 /* SEARCH FUNCTION */
 
 .no-search {
