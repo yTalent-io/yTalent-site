@@ -92,6 +92,10 @@
 .footer-wrapper {
   height: 500px;
   background-color: #fbfbfd;
+  color: #000;
+}
+.footer-wrapper a {
+  color: #000;
 }
 .footer {
   display: grid;
@@ -319,6 +323,68 @@
 
   .mobile-nav {
     transform: translate(0%) !important;
+  }
+
+  /* FOOTER MOBILE */
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #fbfbfd;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer {
+    padding: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "logo"
+    "yTalent"
+    "legal"
+    "follow-contact";
+  }
+  .logo p {
+    display: none;
+  }
+
+  .logo {
+    grid-area: logo;
+  }
+
+   .yTalent {
+    grid-area: yTalent;
+    margin-left: 20px;
+  }
+
+  .legal {
+    grid-area: legal;
+    margin-left: 60px;
+  }
+
+  .follow-contact {
+    grid-area: follow-contact;
+    margin-left: 45px;
+  }
+
+  .info {
+    margin-left: 10px;
+  }
+
+  .follow a{
+    color:#233771;
+  }
+
+  .follow {
+    margin-left: -60px;
+  }
+
+  .copyright {
+    margin: 30px 0;
   }
 
   /* SECTIONS */
