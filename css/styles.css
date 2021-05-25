@@ -9,6 +9,26 @@
 
 /* HEADINGS */
 
+/* Page content */
+.content {
+  padding: 16px;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #fff;
+  box-shadow: 0 8px 4px rgba(146, 161, 176, 0.15);
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
 /* BASIC SETUP */
 
 .page-wrapper {
@@ -16,15 +36,16 @@
   height: auto;
 }
 
-.nav-wrapper {
+/* .nav-wrapper {
   width: 100%;
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky; 
   position: sticky;
   top: 0;
   height: 5rem;
   background-color: #fff;
   box-shadow: 0 8px 4px rgba(146, 161, 176, 0.15);
 }
+*/
 
 /* NAVIGATION */
 
@@ -90,7 +111,7 @@
 
 /* MAIN LANDING PAGE */
 .row {
-  margin: 0 auto;
+  margin: 50px auto;
   padding-top: 100px;
   display: flex;
   width: 80%;
