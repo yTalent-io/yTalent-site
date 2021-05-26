@@ -51,7 +51,7 @@
 
 .navbar {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 2fr 6fr;
   align-items: center;
   height: 70px;
   overflow: hidden;
@@ -59,10 +59,9 @@
 
 .navbar img {
   display: block;
-  max-width: 25vh;
+  max-width: 22vh;
   width: 100%;
   margin: 0 auto;
-
   margin-left: 40px;
   cursor: pointer;
 }
@@ -70,7 +69,7 @@
 .navbar ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(8, 3fr);
+  grid-template-columns: repeat(9, 1fr);
   justify-self: end;
   margin-top: 1rem;
 }
@@ -90,8 +89,9 @@
 .partner-button {
   display: block;
   margin: 0 auto;
-  width: 200px;
+  width: 170px;
   height: 30px;
+
   border: 1px solid #233771;
   background: #233771;
   color: #fff;
@@ -105,6 +105,37 @@
   background: white;
   color: #233771;
   border: 1px solid #233771;
+}
+
+/* LANG MENU */
+
+a.gflag {
+  font-size: 2px;
+  padding: 0px;
+  background-repeat: no-repeat;
+}
+
+a.gflag img {
+  border: 0;
+}
+.english a title {
+  list-style: none;
+}
+
+#goog-gt-tt {
+  display: none !important;
+}
+
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+.goog-te-menu-value:hover {
+  text-decoration: none !important;
+}
+
+#google_translate_element2 {
+  display: none !important;
 }
 
 /* SECTIONS */
@@ -139,7 +170,7 @@ h1 {
 
 .partner-button-main {
   display: block;
-  width: 200px;
+  width: 250px;
   height: 30px;
   border: 1px solid #233771;
   background: #233771;
@@ -174,7 +205,7 @@ h1 {
 .companies-logos {
   display: flex;
   margin: 0 auto;
-  padding-left: 120px;
+  padding-left: 75px;
   flex-direction: column;
   align-items: center;
 }
@@ -423,7 +454,7 @@ hr {
 }
 .contact__button {
   display: block;
-  width: 200px;
+  width: 100px;
   height: 30px;
   border: 1px solid #233771;
   background: #233771;
