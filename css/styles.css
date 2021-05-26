@@ -206,8 +206,6 @@ h1 {
   display: flex;
   margin: 0 auto;
   padding-left: 75px;
-  flex-direction: column;
-  align-items: center;
 }
 
 .companies-img {
