@@ -216,98 +216,106 @@
       <h1>What we heard from clients and candidates:</h1>
     </section>
 
-    <section class="carousel-wrapper">
-      <div class="carousel" aria-label="Gallery">
-        <ol class="carousel__viewport">
-          <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-            <div class="carousel__snapper">
-              <a href="#carousel__slide4" class="carousel__prev"
-                >Go to last slide</a
-              >
-              <a href="#carousel__slide2" class="carousel__next"
-                >Go to next slide</a
-              >
-            </div>
-          </li>
-          <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-            <div class="carousel__snapper"></div>
-            <a href="#carousel__slide1" class="carousel__prev"
-              >Go to previous slide</a
-            >
-            <a href="#carousel__slide3" class="carousel__next"
-              >Go to next slide</a
-            >
-          </li>
-          <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-            <div class="carousel__snapper"></div>
-            <a href="#carousel__slide2" class="carousel__prev"
-              >Go to previous slide</a
-            >
-            <a href="#carousel__slide4" class="carousel__next"
-              >Go to next slide</a
-            >
-          </li>
-          <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-            <div class="carousel__snapper"></div>
-            <a href="#carousel__slide3" class="carousel__prev"
-              >Go to previous slide</a
-            >
-            <a href="#carousel__slide1" class="carousel__next"
-              >Go to first slide</a
-            >
-          </li>
-        </ol>
-        <aside class="carousel__navigation">
-          <ol class="carousel__navigation-list">
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide1" class="carousel__navigation-button"
-                >Go to slide 1</a
-              >
-            </li>
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide2" class="carousel__navigation-button"
-                >Go to slide 2</a
-              >
-            </li>
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide3" class="carousel__navigation-button"
-                >Go to slide 3</a
-              >
-            </li>
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide4" class="carousel__navigation-button"
-                >Go to slide 4</a
-              >
-            </li>
-          </ol>
-        </aside>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img
+          src="img/Homepage/OMNI_HQ_-_080_-_Version_2_7c3c2e07-5977-436c-8d30-864e264de2a3_720x-1.jpg"
+          style="width: 10%"
+        />
+
+        <div class="text">
+          <p class="name-ceo">Yuan Nielsen</p>
+
+          <p>Founder-CEO, OMNI</p>
+          <br />
+          <br />
+          <br />
+          "I really felt like I could just lean back and not worry at all about
+          the hiring process."
+        </div>
       </div>
-    </section>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/Homepage/avatar.png" style="width: 10%" />
+        <div class="text">
+          <p class="name-ceo">Candidate</p>
+
+          <p>For a director position</p>
+          <br />
+          <br />
+          <br />
+          "Finally a recruitment agency that takes me seriously as a candidate.
+          <br />
+          It only took me 20 years to find someone!"
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/Homepage/avatar.png" style="width: 10%" />
+        <div class="text">
+          <p class="name-ceo">Candidate</p>
+
+          <p>Account manager</p>
+          <br />
+          <br />
+          "It was a good experience and even after I got the job [...] a couple
+          of times Jakob <br />
+          reached out to me and just caught up to ask [how everything went], and
+          I <br />
+          appreciate that [...] to get a message."
+        </div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <!-- The dots/circles -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
     <!-- Contact form -->
-    <section class="form-wrapper">
-      <h1>yWait when you can contact your yTalent today!</h1>
-      <label for="name">Name:</label>
-      <br />
-      <input type="text" id="name" placeholder="Your name" />
-      <br />
-      <label for="email">Email:</label>
-      <br />
-      <input type="email" id="email" placeholder="email" />
-      <br />
-      <label for="subject">Subject:</label>
-      <br />
-      <input type="text" id="subject" placeholder="Enter your subject" />
-      <br />
-      <label for="textholder">Message:</label>
-      <br />
-      <textarea
-        name="text"
-        id="textholder"
-        cols="30"
-        rows="10"
-        placeholder="Enter your message here"
-      ></textarea>
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact yTalent today!</h2>
+      <div class="contact__container bd-grid">
+        <form action="" method="POST" class="contact__form">
+          <input type="hidden" name="_subject" value="New email woohoo!" />
+          <input
+            type="text"
+            placeholder="Name"
+            class="contact__input"
+            required
+          />
+          <input type="hidden" placeholder="_next" value="" />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="contact__input"
+            required
+          />
+          <textarea
+            placeholder="Hi yTalent, I would like to..."
+            name="message"
+            id=""
+            cols="0"
+            rows="10"
+            class="contact__input"
+          ></textarea>
+
+          <input type="submit" value="Send" class="contact__button button" />
+        </form>
+      </div>
     </section>
 
     <!-- footer -->
