@@ -252,7 +252,9 @@ h1 {
   text-align: center;
   padding-top: 100px;
 }
-
+hr {
+  visibility: hidden;
+}
 /* CAROUSEL */
 
 /* Slideshow container */
@@ -430,6 +432,7 @@ h1 {
   transition: all 200ms ease;
   box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 
 .contact__button:hover {
@@ -474,6 +477,7 @@ h1 {
   padding-top: 100px;
   background-color: #fbfbfd;
   color: #000;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px -8px 8px 0;
 }
 .footer-wrapper a {
   color: #000;
@@ -549,12 +553,20 @@ h1 {
   align-items: center;
 }
 .follow {
-  margin-left: -90px;
+  margin-left: -30px;
+  height: 100px;
+  width: 150px;
 }
 .follow p {
   color: #454451;
   font-size: 18px;
 }
+
+.follow i {
+  color: #233771;
+  height: fit-content;
+}
+
 
 .info p {
   margin-left: -65px;
@@ -706,6 +718,122 @@ h1 {
     transform: translate(0%) !important;
   }
 
+  /* MAIN HERO MOBILE */
+  .main-description {
+    height: auto;
+  }
+  .row {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .main-landing-img {
+    margin-top: 100px;
+  }
+  .partner-button-main {
+    margin-top: 30px;
+    align-self: flex-start;
+  }
+  
+  /* SECTION COMPANIES MOBILE */
+  .companies-headline {
+    padding-top: 50px;
+  }
+  .companies-trust {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .companies-trust div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .companies-logos {
+    padding: 0;
+  }
+
+  /* SECTION MAIN PERFORMER MOBILE */
+  .four-main-performer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+  }
+  .main-performer h1 {
+    padding-top: 50px;
+  }
+  .data-driven, .comparison-model, .transparency, .specialized {
+    margin-bottom: 30px;
+  }
+  .data-driven ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .comparison-model ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .transparency ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .specialized ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* SECTION PILLARS MOBILE */
+  .pillars-one {
+    margin: 70px 0;
+  }
+  .pillars-one h1 {
+    padding-top: 50px;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .column img {
+    height: auto;
+    padding-top: 50px;
+    align-self: center;
+  }
+  .img-pillars-one {
+    height: 300px;
+    width: 300px;
+    margin-left: -20px;
+  }
+  .partner-button-main {
+    margin: 0;
+  }
+  hr {
+    width: 90%;
+    margin-left: 20px;
+    visibility: visible;
+    opacity: 0.5;
+  }
+
   /* FOOTER MOBILE */
   .footer-wrapper {
     display: flex;
@@ -732,43 +860,34 @@ h1 {
   .logo p {
     display: none;
   }
-
   .logo {
     grid-area: logo;
   }
-
   .yTalent {
     grid-area: yTalent;
     margin-left: 20px;
   }
-
   .legal {
     grid-area: legal;
     margin-left: 60px;
   }
-
   .follow-contact {
     grid-area: follow-contact;
-    margin-left: 45px;
+    margin-left: 50px;
   }
-
   .info {
     margin-left: 10px;
   }
-
   .follow a {
     color: #233771;
   }
-
   .follow {
-    margin-left: -60px;
+    margin-left: 0;
   }
-
   .copyright {
     margin: 30px 0;
   }
 
-  /* SECTIONS */
-
   /* SEARCH DISABLED ON MOBILE */
+
 }
