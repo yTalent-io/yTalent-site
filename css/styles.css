@@ -753,6 +753,9 @@ hr {
   .main-description {
     height: auto;
   }
+  .column h1 {
+    margin-top: 20px;
+  }
   .row {
     padding: 0;
     display: flex;
@@ -766,6 +769,7 @@ hr {
   
   .main-landing-img {
     margin-top: 100px;
+    margin-bottom: 70px;
   }
   .partner-button-main {
     margin-top: 30px;
@@ -792,14 +796,22 @@ hr {
   .companies-logos {
     padding: 0;
   }
+  .companies-img {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  .companies-img:hover {
+    opacity: 100%;
+  }
 
   /* SECTION MAIN PERFORMER MOBILE */
   .four-main-performer {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      justify-content: center;
-      align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
   }
   .main-performer h1 {
     padding-top: 50px;
@@ -847,7 +859,7 @@ hr {
   }
   .column img {
     height: auto;
-    padding-top: 50px;
+    /* padding-top: 30px; */
     align-self: center;
   }
   .img-pillars-one {
@@ -855,8 +867,15 @@ hr {
     width: 300px;
     margin-left: -20px;
   }
+  .img-pillars-one[src*="img/Homepage/Home-2.png"] {
+    display: none;
+  }
+  .img-pillars-one[src*="img/Homepage/Home-3.png"] {
+    display: none;
+  }
   .partner-button-main {
     margin: 0;
+    align-self: center;
   }
   hr {
     width: 90%;
