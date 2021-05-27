@@ -753,6 +753,10 @@ hr {
     font-size: 1rem;
   }
 
+  .navbar img {
+    margin-left: 35px;
+  }
+
   .menu-toggle,
   .bar {
     display: block;
@@ -762,10 +766,11 @@ hr {
   .mobile-nav {
     transform: translate(0%) !important;
   }
-
+  
   .english {
-    margin: 0 37%;
+    margin: 0 30%;
   }
+
   .dansk {
     margin: 0 45.7%;
   }
@@ -804,7 +809,7 @@ hr {
   .companies-trust {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
   }
