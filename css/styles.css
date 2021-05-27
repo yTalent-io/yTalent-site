@@ -16,7 +16,7 @@
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
-  z-index: 999;
+  z-index: 998;
   top: 0;
   width: 100%;
   height: 5rem;
@@ -106,6 +106,21 @@
   background: white;
   color: #233771;
   border: 1px solid #233771;
+}
+
+.submenu-solutions ul {
+  display: none;
+}
+
+.submenu-solutions a:hover + ul,
+.submenu-solutions ul:hover {
+  display: block;
+  position: absolute;
+  background-color: #233771;
+  width: 150px;
+  text-align: center;
+  color: white;
+  height: 300px;
 }
 
 /* LANG MENU */
@@ -766,7 +781,7 @@ hr {
   .mobile-nav {
     transform: translate(0%) !important;
   }
-  
+
   .english {
     margin: 0 30%;
   }
