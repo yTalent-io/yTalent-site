@@ -188,6 +188,22 @@ h1 {
   border: 1px solid #233771;
 }
 
+.english img {
+  box-shadow: black 2px 2px 2px 0;
+}
+
+.english img:hover {
+  opacity: 70%;
+}
+
+.dansk img {
+  box-shadow: black 1px 1px 1px 0;
+}
+
+.dansk img:hover {
+  opacity: 70%;
+}
+
 .companies-headline {
   margin: 0 auto;
   text-align: center;
@@ -751,7 +767,7 @@ hr {
     margin: 0 36%;
   }
   .dansk {
-    margin: 0 45.5%;
+    margin: 0 45.7%;
   }
 
   /* MAIN HERO MOBILE */
