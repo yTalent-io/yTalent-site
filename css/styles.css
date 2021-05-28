@@ -118,6 +118,7 @@ a.gflag {
 
 a.gflag img {
   border: 0;
+  box-shadow: none;
 }
 .english a title {
   list-style: none;
@@ -768,11 +769,11 @@ hr {
   }
   
   .english {
-    margin: 0 30%;
+    margin: 0 27%;
   }
 
   .dansk {
-    margin: 0 45.7%;
+    margin: 0 42.7%;
   }
 
   /* MAIN HERO MOBILE */
@@ -917,7 +918,7 @@ hr {
   .footer-wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     background-color: #fbfbfd;
     align-items: center;
     justify-content: center;
@@ -928,31 +929,44 @@ hr {
     align-items: center;
     justify-content: center;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-      "logo"
-      "yTalent"
-      "legal"
-      "follow-contact";
+      "logo logo"
+      "yTalent legal"
+      "follow-contact follow-contact";
   }
   .logo p {
     display: none;
   }
   .logo {
     grid-area: logo;
+    margin-left: -20px;
   }
   .yTalent {
     grid-area: yTalent;
     margin-left: 20px;
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
   .legal {
     grid-area: legal;
-    margin-left: 60px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
   .follow-contact {
     grid-area: follow-contact;
-    margin-left: 50px;
+    margin-left: -120px;
+    margin-top: 20px;
+  }
+  .contact {
+    margin-left: -10px;
   }
   .info {
     margin-left: 10px;
