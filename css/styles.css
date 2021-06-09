@@ -62,8 +62,8 @@
 }
 
 .brand img {
-  width: 70%;
-  margin-top: 5px;
+  width: 60%;
+  margin-top: 8px;
 }
 
 .brand a,
@@ -105,10 +105,21 @@ nav ul li a:visited:not(:only-child):after {
 nav ul li ul li {
   min-width: 190px;
 }
+
 nav ul li ul li a {
   padding: 15px;
   line-height: 20px;
 }
+
+nav ul li ul li a:hover {
+  border: 1px solid #233771;
+  background: #233771;
+  color: white;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  cursor: pointer;
+}
+
 .nav-dropdown {
   position: absolute;
   display: none;
