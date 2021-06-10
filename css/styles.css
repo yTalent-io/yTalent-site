@@ -104,21 +104,25 @@ nav ul li a:visited:not(:only-child):after {
 }
 nav ul li ul li {
   min-width: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 nav ul li ul li a {
-  padding: 15px;
+  padding-top: 15px;
   line-height: 20px;
 }
 
-nav ul li ul li a:hover {
+/* nav ul li ul li a:hover {
   border: 1px solid #233771;
   background: #233771;
   color: white;
   transition: all 200ms ease;
   box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
   cursor: pointer;
-}
+} */
 
 .nav-dropdown {
   position: absolute;
@@ -127,9 +131,9 @@ nav ul li ul li a:hover {
   background-color: #fff;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   width: 100vw;
-  height: 300px;
+  height: 350px;
   left: 0px;
-  top: 75px;
+  top: 70px;
 }
 .drop{
   display: grid;
@@ -138,8 +142,8 @@ nav ul li ul li a:hover {
   justify-content: center;
   height: 100%;
   grid-template-areas: 
-  "sol rec ."
-  "sales price .";
+  "sol rec logo"
+  "sales . logo";
 }
 .solutions {
   grid-area: sol;
@@ -150,15 +154,82 @@ nav ul li ul li a:hover {
 .sales {
   grid-area: sales;
 }
-.pricing {
+/* .pricing {
   grid-area: price;
+} */
+.logofooter {
+  grid-area: logo;
 }
 
 .drop li {
   display: flex;
+  flex-direction: column;
   justify-content: left;
+  align-items: left;
+}
+.drop a {
+  padding: 15px 0px;
+  font-weight: 600;
+  color: #006EA7 !important;
+}
+.menu-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+.menu-box img {
+  height: 100px;
+  width: auto;
+}
+.logofooter img {
+  position: absolute;
+  z-index: -1;
+  background-size: auto;
+  height: 250px;
+  width: auto;
+  margin-left: 150px;
+  margin-top: 50px;
+  opacity: 0.5;
+}
+.logofooter h2 {
+  z-index: 1;
+  margin-top: 50px;
+  margin-left: 50px;
+  font-weight: 400;
+}
+.logofooter p {
+  z-index: 1;
+  margin-top: 20px;
   margin-left: 50px;
 }
+.call {
+  margin-top: 15px;
+  padding: 15px;
+  line-height: 10px;
+  width: 160px;
+  height: 40px;
+  border: 1px solid #233771;
+  background: #233771;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  cursor: pointer;
+  margin-left: 50px;
+}
+.call:hover {
+  background: white;
+  color: #233771;
+  border: 1px solid #233771;
+}
+
+
+.drop li  a:not(:only-child):after,
+ .drop li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: " ";
+} 
 
 .button-nav {
   margin-top: 15px;
