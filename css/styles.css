@@ -85,7 +85,7 @@ nav ul {
 }
 nav ul li {
   float: left;
-  position: relative;
+  /* position: relative; */
 }
 nav ul li a,
 nav ul li a:visited {
@@ -124,7 +124,40 @@ nav ul li ul li a:hover {
   position: absolute;
   display: none;
   z-index: 1;
+  background-color: #fff;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  width: 100vw;
+  height: 300px;
+  left: 0px;
+  top: 75px;
+}
+.drop{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  height: 100%;
+  grid-template-areas: 
+  "sol rec ."
+  "sales price .";
+}
+.solutions {
+  grid-area: sol;
+}
+.recruitment {
+  grid-area: rec;
+}
+.sales {
+  grid-area: sales;
+}
+.pricing {
+  grid-area: price;
+}
+
+.drop li {
+  display: flex;
+  justify-content: left;
+  margin-left: 50px;
 }
 
 .button-nav {
