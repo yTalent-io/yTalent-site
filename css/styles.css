@@ -124,6 +124,7 @@ nav ul li ul li a {
   cursor: pointer;
 } */
 
+/* DROPDOWN */
 .nav-dropdown {
   position: absolute;
   display: none;
@@ -131,10 +132,12 @@ nav ul li ul li a {
   background-color: #fff;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   width: 100vw;
-  height: 350px;
+  height: auto;
   left: 0px;
   top: 70px;
+  padding: 30px 0;
 }
+/* Solutions dropdown */
 .drop{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -160,7 +163,6 @@ nav ul li ul li a {
 .logofooter {
   grid-area: logo;
 }
-
 .drop li {
   display: flex;
   flex-direction: column;
@@ -172,6 +174,97 @@ nav ul li ul li a {
   font-weight: 600;
   color: #006EA7 !important;
 }
+.drop li  a:not(:only-child):after,
+ .drop li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: " ";
+} 
+
+/* About dropdown */
+.drop-about{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  height: 100%;
+  grid-template-areas: 
+  "about team logo"
+  "csr . logo"
+  "careers . logo";
+}
+.about {
+  grid-area: about;
+}
+.team {
+  grid-area: team;
+}
+.csr {
+  grid-area: csr;
+}
+.contact {
+  grid-area: contact;
+}
+.careers {
+  grid-area: careers;
+}
+.logofooter {
+  grid-area: logo;
+}
+.drop-about li {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+.drop-about a {
+  padding: 15px 0px;
+  font-weight: 600;
+  color: #006EA7 !important;
+}
+.drop-about li  a:not(:only-child):after,
+ .drop-about li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: " ";
+} 
+
+/* Insights dropdown */
+.drop-insights{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  height: 100%;
+  grid-template-areas: 
+  "blog library logo"
+  ". . logo"
+}
+.blog {
+  grid-area: blog;
+}
+.library {
+  grid-area: library;
+}
+.logofooter {
+  grid-area: logo;
+}
+.drop-about li {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+.drop-about a {
+  padding: 15px 0px;
+  font-weight: 600;
+  color: #006EA7 !important;
+}
+.drop-about li  a:not(:only-child):after,
+ .drop-about li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: " ";
+} 
+
+/* Same dropdown options */
 .menu-box {
   display: flex;
   justify-content: center;
@@ -223,13 +316,6 @@ nav ul li ul li a {
   color: #233771;
   border: 1px solid #233771;
 }
-
-
-.drop li  a:not(:only-child):after,
- .drop li a:visited:not(:only-child):after {
-  padding-left: 4px;
-  content: " ";
-} 
 
 .button-nav {
   margin-top: 15px;
@@ -393,20 +479,16 @@ h1 {
   display: grid;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: flex-start;
+  align-items: center;
   padding: 70px 0;
-  justify-content: space-evenly;
-}
-
-.companies-logos {
-  display: flex;
-  margin: 0 auto;
-  padding-left: 75px;
+  justify-content: center;
+  /* margin-left: 100px; */
 }
 
 .companies-img {
   cursor: pointer;
   opacity: 0.5;
+  padding-left: 50px;
 }
 
 .companies-img:hover {
@@ -1004,6 +1086,7 @@ hr {
   .companies-img {
     cursor: pointer;
     opacity: 0.5;
+    padding-right: 30px;
   }
 
   .companies-img:hover {
