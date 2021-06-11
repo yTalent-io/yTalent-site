@@ -1,0 +1,89 @@
+.main-solutions {
+  margin-top: 0;
+}
+
+.column h2 {
+  margin-top: 0;
+  color: #233771;
+}
+
+.solutions-button {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  margin-right: 90px;
+  color: #fff;
+  border: 1px solid #233771;
+  background: #233771;
+  border-radius: 30px;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  cursor: pointer;
+}
+
+.solutions-button:hover {
+  background: white;
+  color: #233771;
+  border: 1px solid #233771;
+}
+
+.solutions-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.solutions-button a:hover {
+  color: #233771;
+}
+
+.footer-solutions {
+  margin-top: 150px;
+}
+
+/* MAIN LANDING PAGE */
+.row {
+  margin: 50px auto;
+  display: flex;
+  width: 80%;
+}
+
+.column {
+  flex: 50%;
+  margin: 0 auto;
+}
+
+.img-main-solutions {
+  width: 100%;
+}
+
+.main-p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* SECTION PILLARS MOBILE */
+
+@media only screen and (max-width: 720px) {
+  .main-solutions {
+    margin: 70px 0;
+  }
+  .main-solutions h2 {
+    padding-top: 50px;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-main-solutions {
+    height: 300px;
+    width: 300px;
+    /* padding-top: 30px; */
+    align-self: center;
+  }
+
+  .solutions-button {
+    margin: 10px;
+    align-self: center;
+  }
+}
