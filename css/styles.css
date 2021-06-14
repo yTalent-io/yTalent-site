@@ -247,19 +247,19 @@ nav ul li ul li a {
 .logofooter {
   grid-area: logo;
 }
-.drop-about li {
+.drop-insights li {
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: left;
 }
-.drop-about a {
+.drop-insights a {
   padding: 15px 0px;
   font-weight: 600;
   color: #006EA7 !important;
 }
-.drop-about li  a:not(:only-child):after,
- .drop-about li a:visited:not(:only-child):after {
+.drop-insights li  a:not(:only-child):after,
+ .drop-insights li a:visited:not(:only-child):after {
   padding-left: 4px;
   content: " ";
 } 
