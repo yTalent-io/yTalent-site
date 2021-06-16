@@ -1,9 +1,9 @@
 .main-solutions {
-  margin-top: 0;
+  margin-top: 150px;
 }
 
-.column h2 {
-  margin-top: 0;
+.column-solutions h2 {
+  margin-top: 90px;
   color: #233771;
 }
 
@@ -40,19 +40,20 @@
 }
 
 /* MAIN LANDING PAGE */
-.row {
+.row-solutions {
   margin: 50px auto;
   display: flex;
   width: 80%;
 }
 
-.column {
+.column-solutions {
   flex: 50%;
   margin: 0 auto;
 }
 
 .img-main-solutions {
   width: 100%;
+  margin-top: 60px;
 }
 
 .main-p {
@@ -69,7 +70,7 @@
   .main-solutions h2 {
     padding-top: 50px;
   }
-  .column {
+  .column-solutions {
     display: flex;
     flex-direction: column;
     justify-content: center;

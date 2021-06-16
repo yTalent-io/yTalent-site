@@ -1,0 +1,129 @@
+.main-recruitment {
+    margin-top: 200px;
+  }
+  
+  .column-recruitment h2 {
+    margin-top: 90px;
+    color: #233771;
+  }
+  
+  .solutions-button {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    margin-right: 90px;
+    color: #fff;
+    border: 1px solid #233771;
+    background: #233771;
+    border-radius: 30px;
+    box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+    cursor: pointer;
+  }
+  
+  .solutions-button:hover {
+    background: white;
+    color: #233771;
+    border: 1px solid #233771;
+  }
+  
+  .solutions-button a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .solutions-button a:hover {
+    color: #233771;
+  }
+  
+  .footer-solutions {
+    margin-top: 150px;
+  }
+  
+  /* MAIN LANDING PAGE */
+
+  .pillars-one-recruitment h1 {
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  .column-recruitment h2 {
+    margin-top: 20px;
+  }
+  .row-recruitment {
+    margin: 100px auto;
+    display: flex;
+    width: 80%;
+  }
+  
+  .column-recruitment {
+    flex: 50%;
+    margin: 40px auto;
+  }
+  
+  .img-main-recruitment {
+    width: 90%;
+    margin-top: 100px;
+  }
+
+  
+  
+  .main-p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .dot-recruitment{
+      margin-bottom: 100px;
+  }
+  
+  /* SECTION PILLARS MOBILE */
+  
+  @media only screen and (max-width: 720px) {
+    .main-recruitment {
+      margin: 70px 0;
+    }
+    .main-recruitment h2 {
+      padding-top: 50px;
+    }
+    .column-recruitment {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .img-main-recruitment {
+      height: 300px;
+      width: 300px;
+      /* padding-top: 30px; */
+      align-self: center;
+    }
+
+    .pillars-one-recruitment {
+        margin: 70px 0;
+      }
+      .pillars-one-recruitment h1 {
+        padding-top: 50px;
+      }
+      .column-recruitment {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .column-recruitment img {
+        height: auto;
+        /* padding-top: 30px; */
+        align-self: center;
+      }
+      .img-pillars-one-recruitment {
+        height: 300px;
+        width: 300px;
+        margin-left: -20px;
+      }
+  
+    .solutions-button {
+      margin: 10px;
+      align-self: center;
+    }
+  }
+  
