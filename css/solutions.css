@@ -41,14 +41,14 @@
 
 /* MAIN LANDING PAGE */
 .row-solutions {
-  margin: 50px auto;
+  margin: 0 auto;
   display: flex;
   width: 80%;
 }
 
 .column-solutions {
   flex: 50%;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 .img-main-solutions {

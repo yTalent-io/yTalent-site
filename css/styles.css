@@ -424,8 +424,7 @@ nav ul li ul li a {
 
 /* MAIN LANDING PAGE */
 .row {
-  margin: 50px auto;
-  padding-top: 100px;
+  margin: 200px auto;
   display: flex;
   width: 80%;
 }
