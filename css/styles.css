@@ -426,16 +426,17 @@ nav ul li ul li a {
 .row {
   margin: 200px auto;
   display: flex;
+  align-items: center;
   width: 80%;
 }
 
 .column {
   flex: 50%;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 .main-landing-img {
-  width: 120%;
+  width: 100%;
 }
 
 h1 {
@@ -784,6 +785,7 @@ hr {
   background-color: #fbfbfd;
   color: #000;
   box-shadow: rgba(37, 39, 89, 0.08) 0px -8px 8px 0;
+  bottom: 0px;
 }
 .footer-wrapper a {
   color: #000;
@@ -792,7 +794,7 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: flex-start;
-  padding: 70px 0;
+  padding-top: 70px;
   justify-content: space-evenly;
 }
 .copyright {
@@ -800,6 +802,7 @@ hr {
   align-items: center;
   justify-content: center;
   width: 100%;
+  background-color: #fbfbfd;
 }
 
 .logo {
@@ -811,9 +814,9 @@ hr {
   max-width: 200px;
 }
 
-.logo-footer {
+/* .logo-footer {
   margin-top: 20px;
-}
+} */
 
 .yTalent {
   display: flex;

@@ -1,0 +1,283 @@
+.main-sales {
+  margin-top: 150px;
+}
+
+.column-solutions h2 {
+  margin-top: 90px;
+  color: #233771;
+}
+
+.sales-button {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  margin-right: 90px;
+  color: #fff;
+  border: 1px solid #233771;
+  background: #233771;
+  border-radius: 30px;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  cursor: pointer;
+}
+
+.saless-button:hover {
+  background: white;
+  color: #233771;
+  border: 1px solid #233771;
+}
+
+.sales-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sales-button a:hover {
+  color: #233771;
+}
+
+.footer-sales {
+  margin-top: 150px;
+}
+/* MAIN LANDING PAGE */
+.row-sales {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.column-sales {
+  flex: 50%;
+  margin: 0px auto;
+}
+
+.img-main-sales {
+  width: 100%;
+}
+
+.main-p {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+ /* DOWNLOADABLES */ 
+
+
+.download-section{
+  background-color: #f9f9f9;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.download-section h1{
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+  }
+
+.row-download-sales{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 25px;
+}
+
+.column-download{
+  float: left;
+  width: 40%;
+}
+
+.row-download::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column-download img{
+  display: flex;
+  width: 100%;
+}
+
+.p-download{
+  width: 70%;
+  margin-left: 35px;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 8px 8px 4px rgba(146, 161, 176, 0.15);
+}
+
+.download-button{
+  display: block;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #233771;
+  background: #233771;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  cursor: pointer;
+  margin: 0 auto;}
+
+.download-button:hover{
+  background: white;
+  color: #233771;
+  border: 1px solid #233771;
+}
+
+/* MAIN */
+
+.pillars-one-sales h1 {
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  .column-sales h2 {
+    margin-top: 20px;
+  }
+  .row-sales {
+    /* margin: 100px auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  
+  .column-sales {
+    flex: 50%;
+    margin: 40px auto;
+  }
+  
+  .img-main-sales {
+    width: 90%;
+    /* margin-top: 100px; */
+  }
+
+  
+  .main-p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+  .gray-three-cases {
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+
+  .gray-three-cases {
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .gray-three-cases h3 {
+    color: #233771;
+    text-align: left;
+    padding-left: 80px;
+    padding-top: 50px;
+    text-decoration: underline;
+  }
+
+  .cases {
+    display: flex;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .case {
+    display: flex;
+    flex: 33.33%;
+    /* padding-left: 50px;
+    padding-right: 50px; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .case p {
+    text-align: left;
+  }
+
+  .case h2 {
+    color: #233771;
+  }
+
+  .case img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .training-expert {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .training-expert h1 {
+    padding-top: 80px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .training-expert img {
+    padding: 80px 0;
+  }
+ 
+  
+  /* SECTION PILLARS MOBILE */
+  
+  @media only screen and (max-width: 720px) {
+    .main-sales {
+      margin: 70px 0;
+    }
+    .main-sales h2 {
+      padding-top: 50px;
+    }
+    .column-sales {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .column-download {
+      width: 100%;
+    }
+
+    .img-main-sales {
+      height: 300px;
+      width: 300px;
+      /* padding-top: 30px; */
+      align-self: center;
+    }
+
+    .pillars-one-sales {
+        margin: 70px 0;
+      }
+      .pillars-one-sales h1 {
+        padding-top: 50px;
+      }
+      .column-sales {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .column-sales img {
+        height: auto;
+        /* padding-top: 30px; */
+        align-self: center;
+      }
+      .img-pillars-one-sales {
+        height: 300px;
+        width: 300px;
+        margin-left: -20px;
+      }
+  
+    .solutions-button {
+      margin: 10px;
+      align-self: center;
+    }
+  }
