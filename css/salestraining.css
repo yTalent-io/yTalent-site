@@ -164,7 +164,7 @@
 
   .gray-three-cases {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: #f9f9f9;
   }
 
@@ -182,7 +182,7 @@
   }
 
   .cases {
-    display: flex;
+    display: grid;
     padding-left: 80px;
     padding-right: 80px;
   }
