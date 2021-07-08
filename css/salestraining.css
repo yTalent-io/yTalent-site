@@ -232,11 +232,26 @@
   .main-sales h2 {
     padding-top: 50px;
   }
+  .row-sales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .column-sales {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .row-download-sales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
   }
 
   .column-download {
@@ -273,10 +288,20 @@
     margin-left: -20px;
   }
 
-  .solutions-button {
+  .img-main-sales[src*="img/Sales/team-meeting (1).png"] {
+    display: none;
+  }
+  .img-main-sales[src*="img/Sales/leader.png"] {
+    display: none;
+  }
+  .img-main-sales[src*="img/Sales/success.png"] {
+    display: none;
+  }
+
+  /* .solutions-button {
     margin: 10px;
     align-self: center;
-  }
+  } */
 
   .cases {
     display: flex;
@@ -287,5 +312,15 @@
 
   .case {
     padding-top: 30px;
+  }
+
+  .download-button {
+    width: auto;
+    padding: 10px 20px;
+    height: auto;
+  }
+
+  .gray-three-cases h3 {
+    padding-bottom: 10px;
   }
 }

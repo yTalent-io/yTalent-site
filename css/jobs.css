@@ -45,30 +45,149 @@ hr {
 }
 
 .box {
-  /* MAKE HERE GRID TEMPLATE AREA INSTEAD OF FLEX */
-  display: flex;
+  /* display: flex;
   justify-content: flex-start;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: 30% 5% 40% 25%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo line inner button";
+  justify-content: center;
   align-items: center;
   width: 100%;
-  height: 150px;
+  height: auto;
   background-color: #fff;
   border-radius: 30px;
-  -webkit-box-shadow: 0px 8px 17px -2px rgba(0, 0, 0, 0.26);
-  box-shadow: 0px 8px 17px -2px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0px 8px 10px -2px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 8px 10px -2px rgba(0, 0, 0, 0.26);
   margin-bottom: 50px;
   padding-left: 20px;
 }
 
-.img-logo-job {
-  padding-right: 10px;
+img-logo-job {
+  grid-area: logo;
 }
 
-.vertical {
+vertical-big {
+  grid-area: line;
+}
+
+column-inner {
+  grid-area: inner;
+}
+
+apply-button {
+  grid-area: button;
+}
+
+.img-logo-job img {
+  padding-right: 50px;
+  object-fit: cover;
+  width: 80%;
+  max-height: 100%;
+}
+
+.vertical-big {
   border-left: 0.5px solid #a9a6a6;
   height: 100px;
   /* visibility: visible; */
 }
+
+.vertical-small {
+  border-left: 0.5px solid #a9a6a6;
+  height: 50px;
+}
+
+.column-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* padding-left: 100px; */
+}
+
+.inner-lower {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.inner-lower > div {
+  padding-right: 30px;
+}
+
+.job-title {
+  color: #233771;
+}
+
 .bold {
   color: #233771 !important;
   font-weight: bold;
+}
+
+.apply-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 150px; */
+}
+
+.button-apply-now {
+  margin-top: 15px;
+  padding: 15px;
+  line-height: 10px;
+  width: 160px;
+  height: 40px;
+  border: 1px solid #fff;
+  background: #fff;
+  color: #233771;
+  border-radius: 30px;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 8px 10px -2px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 8px 10px -2px rgba(0, 0, 0, 0.26);
+  object-fit: cover;
+}
+
+.button-apply-now:hover {
+  background: #233771;
+  color: #fff;
+  border: 1px solid #233771;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-landing-img {
+    margin: 0;
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "logo"
+      "inner"
+      "button";
+  }
+
+  .vertical-big {
+    display: none;
+  }
+
+  .img-logo-job {
+    display: flex;
+    justify-self: center;
+  }
+
+  .img-logo-job img {
+    padding-right: 0;
+  }
+
+  .apply-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+  }
 }

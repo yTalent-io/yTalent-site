@@ -1,83 +1,80 @@
 .main-recruitment {
-    margin-top: 200px;
-  }
-  
-  .column-recruitment h2 {
-    margin-top: 90px;
-    color: #233771;
-  }
-  
-  .solutions-button {
-    display: inline-block;
-    width: 150px;
-    height: 30px;
-    margin-right: 90px;
-    color: #fff;
-    border: 1px solid #233771;
-    background: #233771;
-    border-radius: 30px;
-    box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
-    cursor: pointer;
-  }
-  
-  .solutions-button:hover {
-    background: white;
-    color: #233771;
-    border: 1px solid #233771;
-  }
-  
-  .solutions-button a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .solutions-button a:hover {
-    color: #233771;
-  }
-  
-  .footer-solutions {
-    margin-top: 150px;
-  }
+  margin-top: 200px;
+}
 
-  
+.column-recruitment h2 {
+  margin-top: 90px;
+  color: #233771;
+}
 
-  /* DOWNLOADABLES */ 
+.solutions-button {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  margin-right: 90px;
+  color: #fff;
+  border: 1px solid #233771;
+  background: #233771;
+  border-radius: 30px;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  cursor: pointer;
+}
 
+.solutions-button:hover {
+  background: white;
+  color: #233771;
+  border: 1px solid #233771;
+}
 
-.download-section{
+.solutions-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.solutions-button a:hover {
+  color: #233771;
+}
+
+.footer-solutions {
+  margin-top: 150px;
+}
+
+/* DOWNLOADABLES */
+
+.download-section {
   background-color: #f9f9f9;
   width: 80%;
   margin: 0 auto;
   padding-bottom: 100px;
 }
-.download-section h1{
+.download-section h1 {
   margin: 0 auto;
   text-align: center;
   padding-top: 100px;
-  }
+}
 
-.row-download{
+.row-download {
   margin-top: 100px;
   margin-left: 25px;
 }
 
-.column-download{
+.column-download {
   float: left;
   width: 33.33%;
 }
 
-.row-download::after{
+.row-download::after {
   content: "";
   display: table;
   clear: both;
 }
 
-.column-download img{
+.column-download img {
   display: flex;
   width: 100%;
 }
 
-.p-download{
+.p-download {
   width: 70%;
   margin-left: 35px;
   background-color: white;
@@ -86,7 +83,7 @@
   box-shadow: 8px 8px 4px rgba(146, 161, 176, 0.15);
 }
 
-.download-button{
+.download-button {
   display: block;
   width: 200px;
   height: 30px;
@@ -97,105 +94,118 @@
   transition: all 200ms ease;
   box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
   cursor: pointer;
-  margin: 0 auto;}
+  margin: 0 auto;
+}
 
-.download-button:hover{
+.download-button:hover {
   background: white;
   color: #233771;
   border: 1px solid #233771;
 }
-  
-  /* MAIN LANDING PAGE */
 
-  
-  .pillars-one-recruitment h1 {
-    text-align: center;
-    padding-top: 100px;
-  }
-  
-  .column-recruitment h2 {
-    margin-top: 20px;
+/* MAIN LANDING PAGE */
+
+.pillars-one-recruitment h1 {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.column-recruitment h2 {
+  margin-top: 20px;
+}
+.row-recruitment {
+  margin: 100px auto;
+  display: flex;
+  width: 80%;
+}
+
+.column-recruitment {
+  flex: 50%;
+  margin: 40px auto;
+}
+
+.img-main-recruitment {
+  width: 90%;
+  margin-top: 100px;
+}
+
+.main-p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.dot-recruitment {
+  margin-bottom: 100px;
+}
+
+/* SECTION PILLARS MOBILE */
+
+@media only screen and (max-width: 720px) {
+  .main-recruitment {
+    margin: 70px 0;
   }
   .row-recruitment {
-    margin: 100px auto;
     display: flex;
-    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  
+  .main-recruitment h2 {
+    padding-top: 50px;
+  }
   .column-recruitment {
-    flex: 50%;
-    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  
+
+  .column-download {
+    width: 100%;
+  }
+
   .img-main-recruitment {
-    width: 90%;
-    margin-top: 100px;
+    height: 300px;
+    width: 300px;
+    /* padding-top: 30px; */
+    align-self: center;
   }
 
-  
-  
-  .main-p {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  .pillars-one-recruitment {
+    margin: 70px 0;
+  }
+  .pillars-one-recruitment h1 {
+    padding-top: 50px;
+  }
+  .column-recruitment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .column-recruitment img {
+    height: auto;
+    /* padding-top: 30px; */
+    align-self: center;
+  }
+  .img-pillars-one-recruitment {
+    height: 300px;
+    width: 300px;
+    margin-left: -20px;
   }
 
-  .dot-recruitment{
-      margin-bottom: 100px;
+  .img-pillars-one-recruitment[src*="img/Recruitment/enterprice-2.png"] {
+    display: none;
   }
-  
-  /* SECTION PILLARS MOBILE */
-  
-  @media only screen and (max-width: 720px) {
-    .main-recruitment {
-      margin: 70px 0;
-    }
-    .main-recruitment h2 {
-      padding-top: 50px;
-    }
-    .column-recruitment {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .column-download {
-      width: 100%;
-    }
-
-    .img-main-recruitment {
-      height: 300px;
-      width: 300px;
-      /* padding-top: 30px; */
-      align-self: center;
-    }
-
-    .pillars-one-recruitment {
-        margin: 70px 0;
-      }
-      .pillars-one-recruitment h1 {
-        padding-top: 50px;
-      }
-      .column-recruitment {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .column-recruitment img {
-        height: auto;
-        /* padding-top: 30px; */
-        align-self: center;
-      }
-      .img-pillars-one-recruitment {
-        height: 300px;
-        width: 300px;
-        margin-left: -20px;
-      }
-  
-    .solutions-button {
-      margin: 10px;
-      align-self: center;
-    }
+  .img-pillars-one-recruitment[src*="img/Recruitment/enterprice-3.png"] {
+    display: none;
   }
-  
+  .img-pillars-one-recruitment[src*="img/Recruitment/enterprice-4.png"] {
+    display: none;
+  }
+
+  .solutions-button {
+    margin: 10px;
+    align-self: center;
+  }
+}
