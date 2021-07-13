@@ -138,15 +138,15 @@ nav ul li ul li a {
   padding: 30px 0;
 }
 /* Solutions dropdown */
-.drop{
+.drop {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
   height: 100%;
-  grid-template-areas: 
-  "sol rec logo"
-  "sales . logo";
+  grid-template-areas:
+    "sol rec logo"
+    "sales . logo";
 }
 .solutions {
   grid-area: sol;
@@ -172,25 +172,25 @@ nav ul li ul li a {
 .drop a {
   padding: 15px 0px;
   font-weight: 600;
-  color: #006EA7 !important;
+  color: #006ea7 !important;
 }
-.drop li  a:not(:only-child):after,
- .drop li a:visited:not(:only-child):after {
+.drop li a:not(:only-child):after,
+.drop li a:visited:not(:only-child):after {
   padding-left: 4px;
   content: " ";
-} 
+}
 
 /* About dropdown */
-.drop-about{
+.drop-about {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: center;
   height: 100%;
-  grid-template-areas: 
-  "about team logo"
-  "csr . logo"
-  "careers . logo";
+  grid-template-areas:
+    "about team logo"
+    "csr . logo"
+    "careers . logo";
 }
 .about {
   grid-area: about;
@@ -219,24 +219,24 @@ nav ul li ul li a {
 .drop-about a {
   padding: 15px 0px;
   font-weight: 600;
-  color: #006EA7 !important;
+  color: #006ea7 !important;
 }
-.drop-about li  a:not(:only-child):after,
- .drop-about li a:visited:not(:only-child):after {
+.drop-about li a:not(:only-child):after,
+.drop-about li a:visited:not(:only-child):after {
   padding-left: 4px;
   content: " ";
-} 
+}
 
 /* Insights dropdown */
-.drop-insights{
+.drop-insights {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
   height: 100%;
-  grid-template-areas: 
-  "blog library logo"
-  ". . logo"
+  grid-template-areas:
+    "blog library logo"
+    ". . logo";
 }
 .blog {
   grid-area: blog;
@@ -256,13 +256,13 @@ nav ul li ul li a {
 .drop-insights a {
   padding: 15px 0px;
   font-weight: 600;
-  color: #006EA7 !important;
+  color: #006ea7 !important;
 }
-.drop-insights li  a:not(:only-child):after,
- .drop-insights li a:visited:not(:only-child):after {
+.drop-insights li a:not(:only-child):after,
+.drop-insights li a:visited:not(:only-child):after {
   padding-left: 4px;
   content: " ";
-} 
+}
 
 /* Same dropdown options */
 .menu-box {
@@ -990,6 +990,15 @@ hr {
 
   /* MOBILE NAVIGATION */
 
+  .nav {
+    height: auto;
+    width: 100%;
+  }
+
+  .nav-list {
+    background-color: #fff;
+  }
+
   .navbar ul {
     display: flex;
     flex-direction: column;
@@ -1030,14 +1039,75 @@ hr {
     transform: translate(0%) !important;
   }
 
-  .english {
+  /* .english {
     margin: 0 30%;
   }
 
   .dansk {
     margin: 0 45.7%;
+  } */
+
+  /* DROPDOWN MOBILE */
+
+  .drop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .drop a {
+    padding-left: 50px;
   }
 
+  .drop-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .drop-about a {
+    padding-left: 50px;
+  }
+
+  .drop-insights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .drop-insights a {
+    padding-left: 50px;
+  }
+
+  .menu-box {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .menu-box > img {
+    display: none;
+  }
+
+  .menu-box li > p {
+    display: none;
+  }
+
+  .logofooter {
+    display: none;
+  }
+
+  .button-nav {
+    display: none;
+  }
+
+  .active {
+    background-color: #fff;
+  }
   /* MAIN HERO MOBILE */
   .main-description {
     height: auto;
@@ -1097,9 +1167,11 @@ hr {
 
   /* SECTION MAIN PERFORMER MOBILE */
   .four-main-performer {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; */
     justify-content: center;
     align-items: center;
   }
