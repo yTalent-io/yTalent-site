@@ -1,0 +1,216 @@
+body {
+  background-color: f3f3f3;
+}
+.main-jobadd {
+  margin-top: 150px;
+}
+
+.row-jobadd {
+  margin: 0 auto;
+  /* display: flex;
+  justify-content: center;
+  align-items: flex-start; */
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 1fr auto auto 1fr;
+  grid-template-areas:
+    "sidebar small-grid"
+    "sidebar add-info"
+    "sidebar documentation"
+    "sidebar paragraph"
+    "sidebar button";
+  width: 80%;
+  grid-row-gap: 30px;
+  margin-bottom: 150px;
+}
+
+.column-sidebar {
+  grid-area: sidebar;
+  /* flex: 25%; */
+  /* margin: 0px auto; */
+  margin-right: 30px;
+  border-radius: 30px;
+}
+
+.sticky-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 150px !important;
+  z-index: 1;
+  left: 0px;
+  width: 90%;
+  height: 50vh;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 12px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 10px 5px rgba(146, 161, 176, 0.15);
+  /* box-shadow: 0 8px 4px rgba(146, 161, 176, 0.15); */
+  /* margin-top: 150px; */
+}
+
+.column-sidebar h3 {
+  text-align: center;
+  padding-top: 20px;
+  color: #233771;
+}
+
+.column-input {
+  grid-area: small-grid;
+}
+
+.contact__input {
+  border: 1px solid #233771;
+}
+
+.info-title {
+  padding: 15px 0;
+  color: #233771;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "first last"
+    "email confirm"
+    "tel country"
+    "address address"
+    "post city";
+  grid-gap: 15px;
+}
+
+.input-firstname {
+  grid-area: first;
+}
+.input-lastname {
+  grid-area: last;
+}
+.input-email {
+  grid-area: email;
+}
+.input-conf-email {
+  grid-area: confirm;
+}
+.input-tel {
+  grid-area: tel;
+}
+.input-country {
+  grid-area: country;
+}
+.input-address {
+  grid-area: address;
+}
+.input-postcode {
+  grid-area: post;
+}
+.input-city {
+  grid-area: city;
+}
+.row-jobadd-info {
+  grid-area: add-info;
+  /* width: 80%;
+  display: flex;
+  flex-direction: column; */
+}
+
+.row-jobadd-documentation {
+  grid-area: documentation;
+}
+
+.paragraph {
+  grid-area: paragraph;
+}
+.paragraph h3 {
+  color: #233771;
+}
+
+.information-grid {
+  display: flex;
+  width: 80%;
+}
+
+.input-firstnam {
+  padding-right: 15px;
+}
+
+.documentation-grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "text upload"
+    "text upload"
+    "text upload";
+  grid-gap: 15px;
+}
+
+.docu-text {
+  grid-area: text;
+  display: flex;
+  align-items: center;
+}
+
+.docu-upload {
+  grid-area: upload;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="file"]::file-selector-button {
+  margin-top: 15px;
+  padding: 15px;
+  line-height: 10px;
+  border: 1px solid #233771;
+  height: 40px;
+  width: auto;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #233771;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #233771;
+  color: #fff;
+}
+
+input[type="submit"] {
+  margin-top: 15px;
+  padding: 15px;
+  line-height: 10px;
+  border: 1px solid #233771;
+  height: 40px;
+  width: auto;
+  border-radius: 30px;
+  background-color: #233771;
+  color: #fff;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: #233771;
+}
+
+.apply-now-button {
+  grid-area: button;
+  margin-top: 15px;
+  padding: 15px;
+  line-height: 10px;
+  width: 160px;
+  height: 40px;
+  border: 1px solid #233771;
+  background: #233771;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 8px 10px -2px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 8px 10px -2px rgba(0, 0, 0, 0.26);
+  object-fit: cover;
+}
+
+.apply-now-button:hover {
+  background: #fff;
+  color: #233771;
+  border: 1px solid #fff;
+}
