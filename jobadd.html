@@ -203,6 +203,48 @@
         <aside class="column-sidebar sticky-bar">
           <h3>Job details</h3>
           <hr />
+          <div class="description">
+            <div class="icon-title">
+              <i class="fas fa-home"></i>
+              <h4>Company</h4>
+            </div>
+            <p>Revimach</p>
+          </div>
+          <div class="description">
+            <div class="icon-title">
+              <i class="fas fa-search"></i>
+              <h4>Job</h4>
+            </div>
+            <p>Client Agent</p>
+          </div>
+          <div class="description">
+            <div class="icon-title">
+              <i class="fas fa-pencil-alt"></i>
+              <h4>Department</h4>
+            </div>
+            <p>Sales</p>
+          </div>
+          <div class="description">
+            <div class="icon-title">
+              <i class="fas fa-map-marker"></i>
+              <h4>Location</h4>
+            </div>
+            <p>Copenhagen</p>
+          </div>
+          <div class="description">
+            <div class="icon-title">
+              <i class="far fa-calendar"></i>
+              <h4>Industry</h4>
+            </div>
+            <p>Software</p>
+          </div>
+          <div class="description">
+            <div class="icon-title">
+              <i class="far fa-edit"></i>
+              <h4>Seniority level</h4>
+            </div>
+            <p>Entry</p>
+          </div>
         </aside>
         <!-- Contact form -->
         <div class="column-input" id="job-title">
@@ -612,63 +654,16 @@
           <div class="column-information">
             <h3 class="info-title">ADDITIONAL INFORMATION</h3>
             <div class="info-container information-grid">
-              <!-- <div class="first-info">
-                <p>Where did you hear about this position?*</p>
-                <div class="input-selection">
-                  <select
-                    id="position"
-                    name="position"
-                    placeholder="Select position"
-                    class="contact__input"
-                  >
-                    <option value="position">Select</option>
-                    <option value="homepage">Homepage</option>
-                    <option value="internet">Internet</option>
-                    <option value="jobindex">Jobindex</option>
-                    <option value="jobagent">Jobagent</option>
-                    <option value="linkedin">Linkedin</option>
-                    <option value="facebook">Facebook</option>
-                </div>  
-              </div> -->
-              <div class="input-firstnam">
-                <input
-                  type="hidden"
-                  name="_subject"
-                  value="New email woohoo!"
-                />
-                <input
-                  type="text"
-                  placeholder="Selection"
-                  class="contact__input"
-                  required
-                />
-              </div>
-              <div class="input-firstnam">
-                <input
-                  type="hidden"
-                  name="_subject"
-                  value="New email woohoo!"
-                />
-                <input
-                  type="text"
-                  placeholder="Option"
-                  class="contact__input"
-                  required
-                />
-              </div>
-              <!-- <div class="second-info">
-                <p>My application may be considered for other positions and thereby shared with others recruiting in the organization.*</p>
-                <div class="input-option">
-                  <select
-                    id="other"
-                    name="other"
-                    placeholder="Select other"
-                    class="contact__input"
-                  >
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </div>  
-              </div> -->
+              <label>Where did you hear about this position?*</label>
+              <select name="where" id="where" class="contact__input">
+                <option value="option">Option</option>
+                <option value="homepage">Homepage</option>
+                <option value="internet">Internet</option>
+                <option value="jobindex">Jobindex</option>
+                <option value="jobagent">Jobagent</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="facebook">Facebook</option>
+              </select>
             </div>
           </div>
         </div>
@@ -692,7 +687,7 @@
           </div>
         </div>
         <div class="paragraph">
-          <h3>DATA PROCESSING</h3>
+          <h3>COMPLIANCE</h3>
           <br />
           <p>
             yTalent is controller of the personal information you submit in your
