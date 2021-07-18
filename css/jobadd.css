@@ -294,6 +294,7 @@ input[type="submit"]:hover {
     grid-area: side;
     margin-right: 0;
     border-radius: 0;
+    margin-bottom: 30px;
   }
 
   /* .column-sidebar > h3,

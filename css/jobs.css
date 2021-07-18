@@ -159,6 +159,8 @@ apply-button {
 @media only screen and (max-width: 800px) {
   .main-landing-img {
     margin: 0;
+    height: auto;
+    width: 90%;
   }
 
   .box {
@@ -182,8 +184,8 @@ apply-button {
   .img-logo-job {
     display: flex;
     justify-self: center;
-    height: auto;
-    width: 80vw;
+    /* height: auto;
+    width: 80vw !important; */
   }
 
   .img-logo-job img {
