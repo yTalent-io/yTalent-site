@@ -182,6 +182,8 @@ apply-button {
   .img-logo-job {
     display: flex;
     justify-self: center;
+    height: auto;
+    width: 80vw;
   }
 
   .img-logo-job img {

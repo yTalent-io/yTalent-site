@@ -296,14 +296,14 @@ input[type="submit"]:hover {
     border-radius: 0;
   }
 
-  .column-sidebar > h3,
+  /* .column-sidebar > h3,
   div {
     margin-left: 60px;
   }
 
   .description > p {
     margin-left: 85px;
-  }
+  } */
 
   .sticky-bar {
     position: static;
