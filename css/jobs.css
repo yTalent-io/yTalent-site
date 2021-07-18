@@ -175,6 +175,10 @@ apply-button {
     display: none;
   }
 
+  .job-title {
+    padding-bottom: 30px;
+  }
+
   .img-logo-job {
     display: flex;
     justify-self: center;

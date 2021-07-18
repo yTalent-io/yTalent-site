@@ -290,14 +290,19 @@ input[type="submit"]:hover {
     margin-bottom: 150px;
   }
 
-  /* FOR MOBILE MAKE GRID 2 COLUMNS X 3 ROWS */
   .column-sidebar {
     grid-area: side;
     margin-right: 0;
     border-radius: 0;
   }
-  .column-sidebar > div {
-    justify-content: center !important;
+
+  .column-sidebar > h3,
+  div {
+    margin-left: 60px;
+  }
+
+  .description > p {
+    margin-left: 85px;
   }
 
   .sticky-bar {

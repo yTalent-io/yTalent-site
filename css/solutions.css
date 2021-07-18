@@ -81,8 +81,8 @@
     align-items: center;
   }
   .img-main-solutions {
-    height: 500px;
-    width: 500px;
+    height: auto;
+    width: 80vw;
     /* padding-top: 30px; */
     align-self: center;
   }
