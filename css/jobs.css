@@ -198,4 +198,12 @@ apply-button {
     justify-content: flex-start;
     margin-bottom: 50px;
   }
+
+  .filter p {
+    padding-right: 25px;
+  }
+
+  hr {
+    width: 90%;
+  }
 }
