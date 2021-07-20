@@ -86,7 +86,9 @@
     /* padding-top: 30px; */
     align-self: center;
   }
-
+  .img-main-solutions[src*="img/Solutions/teamwork.svg"] {
+    display: none;
+  }
   .solutions-button {
     margin: 10px;
     align-self: center;

@@ -21,6 +21,7 @@ body {
     "sidebar button";
   width: 70%;
   grid-row-gap: 30px;
+  grid-column-gap: 30px;
   margin-bottom: 150px;
 }
 
