@@ -1,0 +1,254 @@
+/* MAIN LANDING PAGE */
+.row-about {
+  margin: 200px auto;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  column-gap: 15px;
+}
+
+.column-about {
+  flex: 50%;
+  margin: 0px auto;
+}
+
+.main-landing-img {
+  width: 100%;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #233771;
+}
+
+.main-p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.partner-button-main {
+  display: block;
+  width: 250px;
+  height: 30px;
+  border: 1px solid #233771;
+  background: #233771;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  cursor: pointer;
+}
+
+.partner-button-main:hover {
+  background: white;
+  color: #233771;
+  border: 1px solid #233771;
+}
+
+/* TEXT - MISSION VISION VALUES */
+h2 {
+  color: #233771;
+  text-align: center;
+}
+
+.row-about-mission {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  column-gap: 15px;
+}
+
+.column-about-mission {
+  flex: 50%;
+  margin: 0px auto;
+}
+
+/* THE BOX OF VALUES */
+.the-box {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+.values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "first . ."
+    ". atom second"
+    "third . .";
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.first-value {
+  grid-area: first;
+}
+.img-atom {
+  grid-area: atom;
+}
+.second-value {
+  grid-area: second;
+}
+.third-value {
+  grid-area: third;
+}
+
+.img-atom img {
+  height: auto;
+  width: 70%;
+}
+
+.values h2 {
+  text-align: left;
+}
+
+/* CULTURE */
+.row-about-culture {
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  column-gap: 15px;
+}
+
+.row-about-culture h2 {
+  text-align: left;
+}
+
+/* FOUNDER STORY */
+.row-about-founder {
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  column-gap: 30px;
+  background-color: #f3f3f3;
+}
+.column-about-founder {
+  flex: 50%;
+  margin: 0px auto;
+}
+.the-box-founder {
+  /* background-color: #f3f3f3; */
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.the-box-founder h2 {
+  text-align: left;
+}
+.column-about-founder img {
+  height: auto;
+  width: 80%;
+}
+
+/* TIMELINE */
+.gray {
+  color: gray;
+}
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five";
+  grid-row-gap: 50px;
+}
+.one {
+  grid-area: one;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "title box";
+}
+.two {
+  grid-area: two;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "box title";
+}
+.three {
+  grid-area: three;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "title box";
+}
+.four {
+  grid-area: four;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "box title";
+}
+.five {
+  grid-area: five;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "title box";
+}
+
+.timeline-title {
+  grid-area: title;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-box-right {
+  grid-area: box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  flex: 50%;
+  padding: 0 50px;
+  -webkit-box-shadow: -4px 4px 6px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: -4px 4px 6px 1px rgba(0, 0, 0, 0.25);
+}
+.timeline-box-right img {
+  height: auto;
+  width: 40%;
+  padding: 50px 50px;
+}
+.timeline-box-right p {
+  padding: 0 50px;
+}
+.timeline-box-left {
+  grid-area: box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  flex: 50%;
+  padding: 0 50px;
+  -webkit-box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.25);
+}
+.timeline-box-left img {
+  height: auto;
+  width: 40%;
+  padding: 50px 50px;
+}
+.timeline-box-left p {
+  padding: 0 50px;
+}
