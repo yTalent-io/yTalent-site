@@ -294,18 +294,39 @@ input[type="submit"]:hover {
   .column-sidebar {
     grid-area: side;
     margin-right: 0;
+    margin: 0;
     border-radius: 0;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    height: auto;
   }
 
-  /* .column-sidebar > h3,
-  div {
-    margin-left: 60px;
+  .list {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 30px;
+    justify-self: center;
+  }
+
+  .details {
+    padding-bottom: 20px;
+  }
+
+  .details hr {
+    width: 100%;
+  }
+
+  .description {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .description > p {
-    margin-left: 85px;
-  } */
+    margin-left: 20px;
+  }
 
   .sticky-bar {
     position: static;
