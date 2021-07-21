@@ -306,7 +306,7 @@ input[type="submit"]:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-gap: 30px;
-    justify-self: center;
+    /* justify-self: center; */
   }
 
   .details {
@@ -325,7 +325,11 @@ input[type="submit"]:hover {
   }
 
   .description > p {
-    margin-left: 20px;
+    margin-left: 0;
+  }
+
+  .description i {
+    display: none;
   }
 
   .sticky-bar {
