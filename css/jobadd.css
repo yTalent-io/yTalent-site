@@ -271,7 +271,7 @@ input[type="submit"]:hover {
 
 @media only screen and (max-width: 800px) {
   .main-jobadd {
-    margin: 150px auto;
+    margin: 100px auto;
   }
 
   .row-jobadd {
@@ -306,7 +306,7 @@ input[type="submit"]:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-gap: 30px;
-    /* justify-self: center; */
+    align-self: center;
   }
 
   .details {
