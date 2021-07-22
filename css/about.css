@@ -255,4 +255,115 @@ h2 {
   padding: 0 50px;
 }
 
+/* LAST SECTION */
+.row-about-end {
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  column-gap: 15px;
+}
+
 /* MOBILE */
+@media only screen and (max-width: 800px) {
+  /* LANDING PAGE */
+  main-about {
+    margin: 0 auto;
+  }
+  .row-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+  }
+  .column-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .column-about h1 {
+    font-size: 31px;
+  }
+  .main-landing-img {
+    margin: 0;
+    height: auto;
+    width: 100%;
+  }
+  /* BOX */
+  .img-atom [src*="./img/About/science-atom.png"] {
+    display: none;
+  }
+  .values {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "first"
+      "second"
+      "third ";
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+    grid-gap: 20px;
+  }
+
+  .values h2 {
+    text-align: center;
+  }
+
+  /* CULTURE */
+  .row-about-culture {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* FOUNDER STORY */
+  .the-box-founder {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-landing-img-f {
+    display: none;
+  }
+
+  /* TIMELINE */
+  .timeline-box-left,
+  .timeline-box-right {
+    display: none;
+  }
+  .timeline {
+    justify-content: center;
+    align-items: center;
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .two,
+  .four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* LAST SECTION */
+  .row-about-end {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    column-gap: 15px;
+  }
+}
