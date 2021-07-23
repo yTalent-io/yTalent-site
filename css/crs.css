@@ -1,0 +1,72 @@
+/* MAIN LANDING PAGE */
+.row-csr {
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  column-gap: 15px;
+}
+
+.column-csr {
+  flex: 50%;
+  margin: 0px auto;
+}
+
+.main-landing-img-csr {
+  width: 100%;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #233771;
+}
+
+.main-p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* GENDER EQUALITY */
+.gender {
+  background-color: #f3f3f3;
+  width: 100%;
+  height: auto;
+}
+
+/* GALLERY */
+.gallery {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+}
+.photo img {
+  width: 100%;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 800px) {
+  .row-csr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+  }
+  .column-csr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .column-csr h1 {
+    font-size: 31px;
+  }
+  .main-landing-img {
+    margin: 0;
+    height: auto;
+    width: 100%;
+  }
+}
