@@ -1,6 +1,6 @@
 /* MAIN LANDING PAGE */
 .row-csr {
-  margin: 100px auto;
+  margin: 200px auto;
   display: flex;
   align-items: center;
   width: 80%;
@@ -12,8 +12,9 @@
   margin: 0px auto;
 }
 
-.main-landing-img-csr {
-  width: 100%;
+.csr-landing-img img {
+  height: auto;
+  width: 70%;
 }
 
 h1 {
@@ -70,6 +71,9 @@ h1 {
     width: 100%;
   }
   .gallery {
-    margin: 0 auto;
+    margin: 0;
+  }
+  .csr-landing-img {
+    display: none;
   }
 }
