@@ -165,10 +165,17 @@ section hr {
 }
 
 @media only screen and (max-width: 800px) {
-  .main-landing-img {
+  .main-description {
+    display: none;
+  }
+  /* .main-landing-img {
     margin: 0;
     height: auto;
     width: 100%;
+  } */
+
+  .row-jobs {
+    margin: 100px auto;
   }
 
   .box {
