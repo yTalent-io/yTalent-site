@@ -8,13 +8,25 @@
   margin: 0 auto;
   width: 80%;
 }
-
 .column-jobs {
   margin: 0px auto;
   padding-bottom: 70px;
 }
 
 .column-jobs h3 {
+  color: #233771;
+}
+
+.row-jobs-filter {
+  margin: 0 auto;
+  width: 80%;
+}
+.column-jobs-filter {
+  margin: 0px auto;
+  padding-bottom: 70px;
+}
+
+.column-jobs-filter h3 {
   color: #233771;
 }
 
@@ -174,8 +186,11 @@ section hr {
     width: 100%;
   } */
 
-  .row-jobs {
-    margin: 100px auto;
+  .row-jobs-filter {
+    margin-top: 100px;
+  }
+  .column-jobs-filter {
+    padding-bottom: 0;
   }
 
   .box {
