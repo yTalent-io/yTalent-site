@@ -13,6 +13,7 @@
 .content {
   padding: 16px;
 }
+
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
@@ -338,7 +339,7 @@ nav ul li ul li a {
   border: 1px solid #233771;
 }
 
-/* Mobile navigation */
+/* MOBILE NAVIGATION */
 .nav-mobile {
   display: none;
   position: absolute;
@@ -373,6 +374,7 @@ nav ul li ul li a {
     position: static;
   }
 }
+
 @media screen and (min-width: 800px) {
   .nav-list {
     display: block !important;
@@ -418,10 +420,7 @@ nav ul li ul li a {
   transform: rotate(-45deg);
 }
 
-/* LANG MENU */
-
-/* SECTIONS */
-
+/* MAIN PAGE */
 /* MAIN LANDING PAGE */
 .row {
   margin: 200px auto;
@@ -562,8 +561,8 @@ h1 {
 hr {
   visibility: hidden;
 }
-/* CAROUSEL */
 
+/* CAROUSEL */
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -684,7 +683,6 @@ hr {
 }
 
 /* CONTACT FORM */
-
 .bd-grid {
   max-width: 1024px;
   display: grid;
@@ -765,7 +763,6 @@ hr {
 }
 
 /* FOOTER */
-
 .form-wrapper {
   margin: 0 auto;
   display: block;
@@ -778,7 +775,6 @@ hr {
   text-align: center;
 }
 
-/* FOOTER */
 .footer-wrapper {
   height: 500px;
   padding-top: 100px;
@@ -879,15 +875,14 @@ hr {
 .info p {
   margin-left: -65px;
 }
-/* SEARCH FUNCTION */
 
+/* SEARCH FUNCTION */
 .no-search {
   transform: translate(0);
   transition: transform 0.7s ease-in-out;
 }
 
 /* MOBILE MENU & ANIMATION */
-
 .menu-toggle .bar {
   width: 25px;
   height: 3px;
@@ -927,7 +922,6 @@ hr {
 }
 
 /* KEYFRAME ANIMATIONS */
-
 @-webkit-keyframes gradbar {
   0% {
     background-position: 0% 50%;
@@ -1039,14 +1033,6 @@ hr {
     transform: translate(0%) !important;
   }
 
-  /* .english {
-    margin: 0 30%;
-  }
-
-  .dansk {
-    margin: 0 45.7%;
-  } */
-
   /* DROPDOWN MOBILE */
 
   .drop {
@@ -1108,6 +1094,7 @@ hr {
   .active {
     background-color: #fff;
   }
+
   /* MAIN HERO MOBILE */
   .main-description {
     height: auto;

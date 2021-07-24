@@ -1,0 +1,146 @@
+/* MAIN LANDING PAGE */
+.row-team {
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  column-gap: 15px;
+}
+
+.column-team {
+  flex: 50%;
+  margin: 0px auto;
+}
+
+.team-landing-img img {
+  height: auto;
+  width: 70%;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #233771;
+}
+
+.main-p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* TEAM GALLERY */
+.team-row-gallery {
+  /* background-color: #f3f3f3; */
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.team-row-gallery h1 {
+  padding-bottom: 70px;
+}
+
+.team-gallery {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 50px;
+}
+
+.team-member img {
+  width: 80%;
+  border: 3px solid #233771;
+  border-radius: 50%;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.team-name {
+  padding: 20px 0;
+  color: #233771;
+}
+
+/* LAST SECTION */
+.column-team-apply {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.button-apply {
+  margin-top: 15px;
+  padding: 15px;
+  line-height: 10px;
+  width: 160px;
+  height: 40px;
+  border: 1px solid #233771;
+  background: #233771;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  cursor: pointer;
+}
+
+.button-apply:hover {
+  background: white;
+  color: #233771;
+  border: 1px solid #233771;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 800px) {
+  .main-description-one {
+    display: none;
+  }
+  .row-team {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .team-row-gallery {
+    margin: 100px auto;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .team-row-gallery h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .team-gallery {
+    align-items: center;
+    justify-content: center;
+  }
+  .team-member {
+    width: 70%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .team-name {
+    text-align: center;
+  }
+  .team-name h3 {
+    font-size: 25px;
+  }
+
+  .column-team-apply {
+    margin-bottom: 50px;
+  }
+  .column-team-apply h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
