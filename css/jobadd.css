@@ -34,7 +34,9 @@ body {
   border-radius: 30px;
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 0 30px;
+  width: 90%;
+  height: 60vh;
 }
 
 .sticky-bar {
@@ -43,8 +45,8 @@ body {
   top: 150px !important;
   z-index: 1;
   left: 0px;
-  width: 90%;
-  height: 60vh;
+  /* width: 90%;
+  height: 60vh; */
   background-color: #fff;
   -webkit-box-shadow: 0px 4px 12px 5px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 4px 10px 5px rgba(146, 161, 176, 0.15);

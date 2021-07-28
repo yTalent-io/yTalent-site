@@ -77,6 +77,8 @@ hr {
   box-shadow: 0px 3px 8px 4px rgba(146, 161, 176, 0.15);
   margin-bottom: 50px;
   padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 img-logo-job {
@@ -104,7 +106,7 @@ apply-button {
 
 .vertical-big {
   border-left: 0.5px solid #a9a6a6;
-  height: 100px;
+  height: 80%;
   /* visibility: visible; */
 }
 
@@ -118,7 +120,7 @@ section hr {
 
 .vertical-small {
   border-left: 0.5px solid #a9a6a6;
-  height: 50px;
+  height: 40px;
 }
 
 .column-inner {
@@ -195,13 +197,18 @@ section hr {
   } */
 
   .row-jobs-filter {
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    display: none;
   }
   .column-jobs-filter {
     padding-bottom: 0;
   }
   .column-jobs-filter p {
     padding-bottom: 20px;
+  }
+
+  .row-jobs {
+    margin-top: 50px;
   }
 
   .box {
