@@ -1,0 +1,25 @@
+.row-description {
+  margin: 200px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+.column-description {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h3 {
+  color: #233771;
+}
+
+@media only screen and (max-width: 800px) {
+  .main {
+    height: auto;
+  }
+  .row-description {
+    margin: 100px auto;
+  }
+}
