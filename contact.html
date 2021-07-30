@@ -8,7 +8,7 @@
     <script src="js/lightbox-plus-jquery.min.js"></script>
 
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <!-- <link rel="stylesheet" href="css/lightbox.min.css" /> -->
     <link rel="stylesheet" href="css/contact.css" />
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -198,29 +198,68 @@
     </header>
 
     <!-- MAIN -->
-    <section class="main-description">
+    <section class="main-description-contact">
       <div class="row">
         <div class="column">
-          <img class="main-landing-img" src="img/Jobs/job-listing.png" />
+          <h1>Contact us</h1>
+          <p class="main-p">
+            Please fill out this form and we will get in touch with you very
+            soon!
+          </p>
+          <!-- Contact form -->
+          <div class="contact-form">
+            <div class="input-firstname">
+              <input type="hidden" name="_subject" value="New email woohoo!" />
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="contact__input"
+                required
+              />
+            </div>
+            <div class="input-email">
+              <input type="hidden" placeholder="_next" value="" />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Email"
+                class="contact__input"
+                required
+              />
+            </div>
+            <div class="input-subject">
+              <input type="hidden" placeholder="_next" value="" />
+              <input
+                type="subject"
+                name="Subject"
+                placeholder="Subject"
+                class="contact__input"
+                required
+              />
+            </div>
+            <div class="input-textarea">
+              <textarea
+                name="textarea"
+                id=""
+                placeholder="Enter your message here"
+                cols="30"
+                rows="10"
+                class="contact__input"
+                required
+              ></textarea>
+            </div>
+            <button class="button-send" type="submit">SEND</button>
+          </div>
         </div>
         <div class="column">
-          <h1>Commercial positions in fast growing startups and scaleups</h1>
-          <p class="main-p">
-            As a specialized recruitment agency for startups and scaleups, we
-            can help you on your journey to find the next new job in sales,
-            customer success, and customer service positions.
-            <br />
-            We understand how stressful it is to go through the job-hunting
-            process and not hear a response in weeks, or sometimes ever. We take
-            pride in communicating with our candidates. After applying for one
-            of our open job positions, you will receive an interview invitation
-            or get personalized, detailed feedback on why it might not work out
-            this time.
-            <br />
-            We believe in working towards being better and more successful every
-            day.
-          </p>
-          <button class="partner-button-main">Jobs at our partners</button>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.3833258009095!2d12.626738715927084!3d55.664934080529825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa689c727f76aa3a9!2syTalent!5e0!3m2!1sda!2sdk!4v1627637634967!5m2!1sda!2sdk"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
     </section>
@@ -296,6 +335,6 @@
     </footer>
 
     <!-- ================== MAIN JS =================-->
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
   </body>
 </html>
