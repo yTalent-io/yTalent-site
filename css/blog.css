@@ -9,7 +9,7 @@
   height: auto;
 }
 
-.main-description-blog {
+.main-blog-description {
   margin: 0 auto;
 }
 .row-blog {
@@ -22,7 +22,6 @@
 }
 
 .gallery {
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 30px;
@@ -87,4 +86,13 @@
   background: #fff;
   color: #233771;
   border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-blog-description {
+    margin: 0 auto;
+  }
+  .row-blog {
+    margin: 0 auto;
+  }
 }
