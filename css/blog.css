@@ -25,6 +25,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .blog-add {
